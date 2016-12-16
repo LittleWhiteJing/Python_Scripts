@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="refresh" content="{{ data[1] }};url={{ data[2] }}">
+  <title>信息提示</title>
+  <style>
+    #message { position:absolute;left:530px;top:130px;width:300px;height:200px;background:#ccc }
+    .tips { font-size:17px;color:red; }
+  </style>
+</head>
+<body>
+    <div id = "message">
+      <center><h2>信息提示</h2></center>
+      <center><div class="tips">{{ data[0] }}</div></center>
+      <br>
+      <center><div class="tips">{{ data[1] }}秒后跳转!</div></center>
+    </div>
+</body>
+</html>

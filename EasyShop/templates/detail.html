@@ -1,0 +1,39 @@
+<!DOCTYPE THML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>商品详情</title>
+  <style>
+    #goods_img { position:absolute;top:180px;left:350px;width:300px;height:300px;background:white }
+    #goods_desc { position:absolute;top:180px;right:350px;width:300px;height:300px;background:white }
+    #goods_tab1 { position:absolute;top:130px;left:450px;height:30px;font-size:25px;font-weight:bold }
+    #goods_tab2 { position:absolute;top:130px;right:450px;height:30px;font-size:25px;font-weight:bold }
+    #goods_item1 { position:absolute;top:30px;left:50px; }
+    #goods_item2 { position:absolute;top:70px;left:50px; }
+    #goods_item3 { position:absolute;top:110px;left:50px; }
+    #goods_item4 { position:absolute;top:150px;left:50px; }
+    #goods_item5 { position:absolute;top:190px;left:50px; }
+    #goods_item6 { position:absolute;top:250px;left:100px; }
+    a { text-decoration:none; }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>商品管理前台</h1>
+    <a href="http://localhost:5000/home">返回列表</a>
+  </center>
+  <div id="goods_tab1">商品图片</div>
+  <div id="goods_img">
+    <img src="{{ row.goods_img.decode('gbk') }}" style="width:250px;height:250px;"  alt="图片">
+  </div>
+  <div id="goods_tab2">商品参数</div>
+  <div id="goods_desc">
+      <div id="goods_item1">商品编号：&nbsp;&nbsp;&nbsp;{{ row.goods_num.decode('gbk') }}</div>
+      <div id="goods_item2">商品名称：&nbsp;&nbsp;&nbsp;{{ row.goods_name.decode('gbk') }}</div>
+      <div id="goods_item3">商品标签：&nbsp;&nbsp;&nbsp;{{ row.goods_tag.decode('gbk') }}</div>
+      <div id="goods_item4">商品库存：&nbsp;&nbsp;&nbsp;{{ row.goods_total }}</div>
+      <div id="goods_item5">商品价格：&nbsp;&nbsp;&nbsp;{{ row.goods_price }}</div>
+      <div id="goods_item6"><a href="#">加入购物车</a></div>
+  </div>
+</body>
+</html>

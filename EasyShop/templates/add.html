@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>添加商品</title>
+  <style>
+    #form_data { position:absolute;left:480px;top:130px;width:400px;height:400px;background:white }
+    .content { width:170px;height:20px; }
+    #goods_item1 { position:absolute;left:50px;top:20px; }
+    #goods_item2 { position:absolute;left:50px;top:70px; }
+    #goods_item3 { position:absolute;left:50px;top:120px; }
+    #goods_item4 { position:absolute;left:50px;top:170px; }
+    #goods_item5 { position:absolute;left:50px;top:220px; }
+    #goods_item6 { position:absolute;left:50px;top:270px; }
+    #commit_btn { position:absolute;left:150px;top:330px; }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>商品管理后台</h1>
+    <a href="http://localhost:5000/index">返回列表</a>
+  </center>
+  <div id="form_data">
+    <form action="http://localhost:5000/insert" method="post" enctype="multipart/form-data">
+      <div id = "goods_item1">商品编号：&nbsp;&nbsp;&nbsp;<input type="text" class="content" name="goods_num"></div>
+      <div id = "goods_item2">商品名称：&nbsp;&nbsp;&nbsp;<input type="text" class="content" name="goods_name"></div>
+      <div id = "goods_item3">商品标签：&nbsp;&nbsp;&nbsp;<input type="text" class="content" name="goods_tag"></div>
+      <div id = "goods_item4">商品图片：&nbsp;&nbsp;&nbsp;<input type="file" class="content" name="goods_img"></div>
+      <div id = "goods_item5">商品价格：&nbsp;&nbsp;&nbsp;<input type="text" class="content" name="goods_price"></div>
+      <div id = "goods_item6">商品库存：&nbsp;&nbsp;&nbsp;<input type="text" class="content" name="goods_total"></div>
+      <div id = "commit_btn"><input type="submit" value="添加">&nbsp;&nbsp;&nbsp;<input type="reset" value="重置"></div>
+    </form>
+  </div>
+</body>
+</html>

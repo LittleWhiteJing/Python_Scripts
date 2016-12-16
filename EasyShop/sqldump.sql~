@@ -1,0 +1,31 @@
+create database shopdb;
+
+use shopdb
+
+create table shop_goods(
+
+id int identity(1,1) primary key,
+
+goods_num varchar(50) not null default "",
+
+goods_name varchar(50) not null default "",
+
+goods_tag varchar(50) not null default "",
+
+goods_img varchar(50) not null default "",
+
+goods_price decimal(18,0) not null default 0.00,
+
+goods_total smallint not null default 0);
+
+create table shop_user(
+
+id int identity(1,1) primary key,
+
+username varchar(50) not null default "",
+
+password varchar(50) not null default "")
+
+
+
+
