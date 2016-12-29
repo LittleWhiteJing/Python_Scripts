@@ -13,11 +13,21 @@ socket多线程并发处理
 
 ![image](./screenshots/2.png)
 
+socket多线程并发文件下载
+
+![image](./screenshots/3.png)
+
+![image](./screenshots/4.png)
+
+![image](./screenshots/5.png)
+
 ## 项目介绍
 
 * sock文件夹：使用Python编写的单线程socket程序，分为服务端和客户端两个脚本。模拟SSH远程登陆Linux主机并执行Shell命令。
 
 * msock文件夹：使用Python编写的多线程socket程序，分为服务端和客户端两个脚本。通过多线程实现多用户与服务端同时交互。
+
+* mftp文件夹：使用Python编写的多线程socket程序，分为服务端和客户端两个脚本。模仿ftp文件下载和上传功能。
 
 ## 项目部署
 
