@@ -9,7 +9,7 @@ sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 sock.connect((HOST,PORT))
 
 while 1:
-	data = raw_input("Your connect:").strip()
+	data = raw_input("Your command:").strip()
 	if len(data) == 0: continue
 	sock.sendall(data+"\n")
 
